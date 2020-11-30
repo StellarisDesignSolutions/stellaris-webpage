@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(218, 230, 255);
+    /*background-color: rgb(218, 230, 255);*/
     height: 5000px;
 }
 
@@ -11,6 +11,7 @@ ul {
     background-color: #333;
     box-shadow: grey 0px 5px 15px;
     border-radius: 3px;
+    width: 100%;
 }
 
 li {
@@ -28,14 +29,34 @@ li a {
 li a:hover:not(.active) {
     background-color: #111;
 }
-
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
 .active {
     background-color: rgb(37, 96, 124);
 }
 
 .main-logo {
-    margin-left: 25px;
-    margin-right: 50px;
+    margin-left: 15px;
+    margin-right: 25px;
+    float: top;
     float: left;
     width: 75px;
+}
+
+.main-flex {
+    display: flex;
+}
+
+.side-bar {
+    background-color: red;
+    width: 25%;
+    height: 100%;
+}
+
+.main-body {
+    background-color: blue;
+    width: 75%;
+    height: 100%;
 }
